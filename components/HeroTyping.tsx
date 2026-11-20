@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const TITLE = (<>
-Boundless Team
-<br /> Web Developers
+Boundless Team Web Developers
 </>);
 const SLOGAN = "WHERE DREAMS COME ALIVE";
 const TYPING_SPEED_MS = 100;

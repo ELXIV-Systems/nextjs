@@ -48,5 +48,15 @@
     "address": "quetta123",
     "passwordHash": "a75708aac6e386bddf6e3222a0c3e655:997e5b36abb45ad8d672f2a4b20c24d1497e05c26f26c63ead30f80fe55164bb052dc803aec014f0e0b6048eb698870f71dc87e6eb7f843cd70773da14c1941c",
     "role": "user"
+  },
+  {
+    "id": "45fd1360-4e9b-4726-b111-53da07d84f69",
+    "username": "alexi",
+    "fname": "Alex",
+    "lname": "Alex",
+    "email": "alex@gmail.com",
+    "address": "pakistan",
+    "passwordHash": "b88d49d0c9e1c3da47df1ec6ad49c12e:6e11e8200374da37e714473c8aa417350c53684534ac733c2406900472f981c4af742c7a66c5d3573621727f7a7f98547303020a8bf7767d41ea64b34e48f4af",
+    "role": "user"
   }
 ]

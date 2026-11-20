@@ -8,6 +8,7 @@ import {
   FaReact,
   FaPhp,
   FaGitAlt,
+  FaGithub,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -18,6 +19,9 @@ import {
   SiVite,
   SiFramer,
   SiMysql,
+  SiGreensock,
+  SiAndroidstudio,
+  SiVercel,
 } from "react-icons/si";
 
 const techIcons = [
@@ -34,6 +38,10 @@ const techIcons = [
   { icon: FaGitAlt, title: "Git", size: 46 },
   { icon: SiVite, title: "Vite", size: 44 },
   { icon: SiFramer, title: "Framer Motion", size: 44 },
+  { icon: SiGreensock, title: "GSAP", size: 46 },
+  { icon: FaGithub, title: "GitHub", size: 46 },
+  { icon: SiVercel, title: "Vercel", size: 44 },
+  { icon: SiAndroidstudio, title: "Android Studio", size: 44 },
 ];
 
 const containerVariants = {
@@ -77,14 +85,13 @@ export default function Technologies() {
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center">
-
         {/* Heading */}
         <motion.p
           className="mb-3 text-sm uppercase tracking-widest text-amber-300/70"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          My Stack
+          ELXIV SYSTEMS | TECHNOLOGY STACK
         </motion.p>
 
         <motion.h2
@@ -92,10 +99,7 @@ export default function Technologies() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          Building with{" "}
-          <span className="text-amber-300">
-            Modern Technologies
-          </span>
+          Technologies <span className="text-amber-300">We Work With</span>
         </motion.h2>
 
         {/* Description */}
@@ -104,13 +108,13 @@ export default function Technologies() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          Crafting scalable, modern and high-performance web
-          applications with powerful tools and technologies.
+          Building modern web applications, digital products and intelligent
+          software solutions.
         </motion.p>
 
         {/* Technologies */}
         <motion.div
-          className="mt-14 grid w-full grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+          className="mt-14 grid w-full grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
@@ -145,9 +149,7 @@ export default function Technologies() {
                   />
                 </div>
 
-                <span className="mt-4 text-sm text-white/70">
-                  {tech.title}
-                </span>
+                <span className="mt-4 text-sm text-white/70">{tech.title}</span>
               </motion.div>
             );
           })}
@@ -164,9 +166,7 @@ export default function Technologies() {
           <span>Tools I Build With</span>
           <span className="h-px w-8 bg-white/10" />
         </motion.div>
-
       </div>
     </section>
   );
 }
-
