@@ -3,9 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const TITLE = (<>
-Boundless Team Web Developers
-</>);
+const TITLE = <>ELXIV Systems</>;
 const SLOGAN = "WHERE DREAMS COME ALIVE";
 const TYPING_SPEED_MS = 100;
 
@@ -23,7 +21,7 @@ export default function HeroTyping() {
           index++;
         } else {
           clearInterval(interval);
-          setIsTypingComplete(true); 
+          setIsTypingComplete(true);
         }
       }, TYPING_SPEED_MS);
 
@@ -36,7 +34,7 @@ export default function HeroTyping() {
   return (
     <div className="flex flex-col items-center justify-center text-white">
       <motion.h1
-        className="text-3xl sm:text-5xl md:text-6xl font-bold text-amber-500 whitespace-nowrap text-center min-h-12 md:min-h-16"
+        className="text-3xl sm:text-5xl md:text-8xl font-bold text-amber-500 whitespace-nowrap text-center min-h-12 md:min-h-16"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 5 }}
@@ -50,7 +48,9 @@ export default function HeroTyping() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1 }}
       >
-        <span className="opacity-0 select-none [grid-area:1/1] mt-16">{SLOGAN}</span>
+        <span className="opacity-0 select-none [grid-area:1/1] mt-16">
+          {SLOGAN}
+        </span>
 
         <span className="[grid-area:1/1]">
           {displayedText}
